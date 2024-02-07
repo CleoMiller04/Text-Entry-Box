@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --input-padding: 10px;
+      --input-border: 2px solid black;
+    }
+
+    .input-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .input-field {
+      padding: var(--input-padding);
+      border: var(--input-border);
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --input-padding: 5px;
+        --input-border: 1px solid black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="input-container">
+    <input class="input-field" type="text" placeholder="Enter text here...">
+  </div>
+</body>
+</html>
